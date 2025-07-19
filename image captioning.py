@@ -91,7 +91,6 @@ dummy_captions = torch.randint(0, vocab_size, (1, 10))
 outputs = decoder(features, dummy_captions)
 print("Decoder outputs shape:", outputs.shape)
 
-# Sampling caption (inference)
 sampled_ids = decoder.sample(features)
 print("Sampled IDs:", sampled_ids)
 
